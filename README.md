@@ -18,14 +18,9 @@ LogUtil是基于JAVA服务端SpringBoot开发环境下的一款SDK工具包，�
 1. 下载SDK工具包  
 wget https://github.com/lixiang2114/LogUtil/raw/main/target/LogUtil-1.0.jar  
   
-    
-   
 2. 安装SDK工具包  
-mkdir -p $repository/com/bfw/log/LogUtil/1.0
-cp -a LogUtil-1.0.jar $repository/com/bfw/log/LogUtil/1.0/  
-  
-    
-   
+mkdir -p $repository/com/bfw/log/LogUtil/1.0 && cp -a LogUtil-1.0.jar $repository/com/bfw/log/LogUtil/1.0/  
+
 3. 工程中引入SDK包依赖
 ```Text
 <dependency>
