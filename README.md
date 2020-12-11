@@ -70,9 +70,11 @@ logging.filePath:
     ```Text
     on，trace，debug，info，warn，error，fatal，block，off  
     ```
-其中on是最低级别，该级别表示任何日志都全部输出，off是最高级别，它表示不输出任何日志  
+    其中on是最低级别，该级别表示任何日志都全部输出，off是最高级别，它表示不输出任何日志  
+   ​     
 3. 日志数据  
 上述接口中的参数都是日志数据，其中第一个是直接传入日志数据包，日志数据包是一个实体类封装，但并非一个JavaBean，为方便包装日志输出数据，里面的所有成员变量被全部定义为公共的（public），因为该类仅在输出日志数据时包装数据之用，所以未将其设计为JavaBean类，LogData中的大部分属性都提供了默认的初始化属性值，我们可以通过下面两种方法来获得LogData的数据包实例：  
+
 1）、构造方法：  
 ```JAVA
 LogData logData=new LogData(Event eventName);
