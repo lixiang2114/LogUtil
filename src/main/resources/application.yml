@@ -1,0 +1,15 @@
+server.port: 8080
+
+spring:
+  profiles.active: test
+  application.name: demo02
+
+logging.maxFileSize: 100MB
+logging.basePkg: com.bfw.log.controller
+logging.path: g:/cloudlog/${spring.application.name}
+
+logging.mode: file
+logging.maxHistory: 30
+logging.eventLevel: debug
+logging.filePath: g:/cloudlog/${spring.application.name}/mytest.log
+
